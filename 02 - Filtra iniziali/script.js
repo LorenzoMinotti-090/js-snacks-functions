@@ -5,9 +5,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function filterByLetter(array, letter) {
+    const result = [];
+    for (const name of array) {
+        if (name[0] === letter) {
+            result.push(name);
+        }
+    }
+    return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const filteredNames = filterByLetter(names, 'A');
+console.log(filteredNames);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

@@ -5,9 +5,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function getInitials(array) {
+    const result = [];
+    for (const name of array) {
+        result.push(name[0]);
+    }
+    return result;
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const initials = getInitials(names);
+console.log(initials);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
