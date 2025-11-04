@@ -5,9 +5,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function filterByLetter(array, letter) {
+function filterByLetter(names, letter) {
     const result = [];
-    for (const name of array) {
+    for (const name of names) {
         if (name[0] === letter) {
             result.push(name);
         }
